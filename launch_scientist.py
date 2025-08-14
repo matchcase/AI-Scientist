@@ -204,6 +204,8 @@ def do_idea(
             main_model = Model("deepseek/deepseek-reasoner")
         elif model == "llama3.1-405b":
             main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
+        elif "gemini" in model:
+            main_model = Model(f"gemini/{model}")
         else:
             main_model = Model(model)
         coder = Coder.create(
@@ -240,6 +242,8 @@ def do_idea(
                 main_model = Model("deepseek/deepseek-reasoner")
             elif model == "llama3.1-405b":
                 main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
+            elif "gemini" in model:
+                main_model = Model(f"gemini/{model}")
             else:
                 main_model = Model(model)
             coder = Coder.create(

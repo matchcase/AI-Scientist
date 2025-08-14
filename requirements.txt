@@ -3,6 +3,8 @@ anthropic
 aider-chat
 backoff
 openai
+# aider-chat still uses the old SDK
+google-generativeai
 google-genai
 # Viz
 matplotlib
